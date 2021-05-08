@@ -10,6 +10,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PharmacyHome.Memory", "infr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PharmacyHome", "domain\PharmacyHome\PharmacyHome.csproj", "{D921B676-88CC-4D07-88B2-8665F14FC41D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "presentation", "presentation", "{A430F918-9C3D-491A-9D1E-C8BEF02614D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PharmacyHome.Web", "presentation\PharmacyHome.Web\PharmacyHome.Web.csproj", "{BC4FA4E9-AC9C-4577-870E-84BF0E71A222}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +28,10 @@ Global
 		{D921B676-88CC-4D07-88B2-8665F14FC41D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D921B676-88CC-4D07-88B2-8665F14FC41D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D921B676-88CC-4D07-88B2-8665F14FC41D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC4FA4E9-AC9C-4577-870E-84BF0E71A222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC4FA4E9-AC9C-4577-870E-84BF0E71A222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC4FA4E9-AC9C-4577-870E-84BF0E71A222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC4FA4E9-AC9C-4577-870E-84BF0E71A222}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -31,6 +39,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{7EB83C6F-2687-4381-965A-62ABA3699915} = {F2845D06-9EB3-4EFE-A125-03844D64CBE9}
 		{D921B676-88CC-4D07-88B2-8665F14FC41D} = {95AB7839-8342-4B4A-944E-EA03FB0F87B2}
+		{BC4FA4E9-AC9C-4577-870E-84BF0E71A222} = {A430F918-9C3D-491A-9D1E-C8BEF02614D0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {21B409C6-2C21-44B5-83F5-A3F2F56F0A3C}
