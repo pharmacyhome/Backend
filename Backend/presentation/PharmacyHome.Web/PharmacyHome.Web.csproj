@@ -5,7 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\domain\PharmacyHome\PharmacyHome.csproj" />
+    <ProjectReference Include="..\..\infrastruture\PharmacyHome.Memory\PharmacyHome.Memory.csproj" />
   </ItemGroup>
 
 </Project>
