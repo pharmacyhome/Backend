@@ -15,6 +15,10 @@ namespace PharmacyHome
             Title = title;
             ExpirationDate = expirationDate;
         }
+        internal static bool IsExpirationDate(string s)
+        {
+            return false;
+        }
 
     }
 }
