@@ -12,7 +12,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PharmacyHome", "domain\Phar
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "presentation", "presentation", "{A430F918-9C3D-491A-9D1E-C8BEF02614D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PharmacyHome.Web", "presentation\PharmacyHome.Web\PharmacyHome.Web.csproj", "{BC4FA4E9-AC9C-4577-870E-84BF0E71A222}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PharmacyHome.Web", "presentation\PharmacyHome.Web\PharmacyHome.Web.csproj", "{BC4FA4E9-AC9C-4577-870E-84BF0E71A222}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
