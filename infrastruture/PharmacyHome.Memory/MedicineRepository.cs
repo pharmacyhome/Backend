@@ -8,9 +8,9 @@ namespace PharmacyHome.Memory
     {
         private readonly Medicine[] medicines = new[]
         {
-            new Medicine(1, "Омепразол", "03.2022"),
-            new Medicine(2, "Парацетамол", "05.2022"),
-            new Medicine(3, "Корвалол", "01.2023")
+            new Medicine(1, "Омепразол", "Омез", "03.2022"),
+            new Medicine(2, "Парацетамол", "Терафлю", "05.2022"),
+            new Medicine(3, "Цинк", "Зиннерит", "01.2023")
         };
 
         public Medicine[] GetAllByExpirationDate(string expirationDate)
