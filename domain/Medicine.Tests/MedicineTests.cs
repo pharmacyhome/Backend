@@ -28,5 +28,14 @@ namespace Medicine.Tests
 
             Assert.False(actual);
         }
+
+        [Fact]
+        public void IsExpirationDate_WithCorrectExpirationDate_ReturnTrue()
+        {
+            bool actual = PharmacyHome.Medicine.IsExpirationDate("02.02.2021");
+
+            Assert.True(actual);
+        
+        }
     }
 }
