@@ -1,14 +1,9 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using PharmacyHome.Memory;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace PharmacyHome.Web
 {
@@ -26,6 +21,7 @@ namespace PharmacyHome.Web
         {
             services.AddControllersWithViews();
             services.AddSingleton<IMedicineRepository, MedicineRepository>();
+            services.AddSingleton<MedicineService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

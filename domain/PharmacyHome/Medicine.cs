@@ -24,7 +24,7 @@ namespace PharmacyHome
             s = s.Replace("/", ".")
                  .Replace(",", ".");
 
-            return Regex.IsMatch(s, @"\d{1,2}.\d{1,2}.\d{2,4}");
+            return Regex.IsMatch(s, @"\d{1,2}.\d{2,4}");
         }
 
     }
