@@ -8,13 +8,21 @@ namespace PharmacyHome
         public string Name { get; }
         public string ExpirationDate { get; }
         public string Title { get; }
+        public string Description { get; }
+        public int Dosage { get; }
+        public int Amount { get; }
 
-        public Medicine(int id, string name, string title, string expirationDate)
+
+
+        public Medicine(int id, string name, string title, string expirationDate, string description, int dosage, int amount)
         {
             Id = id;
             Name = name;
             Title = title;
             ExpirationDate = expirationDate;
+            Description = description;
+            Dosage = dosage;
+            Amount = amount;
         }
         internal static bool IsExpirationDate(string s)
         {

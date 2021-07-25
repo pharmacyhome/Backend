@@ -13,10 +13,10 @@ namespace Medicine.Tests
         {
             var medicineRepositoryStub = new Mock<IMedicineRepository>();
             medicineRepositoryStub.Setup(x => x.GetAllByExpirationDate(It.IsAny<string>()))
-                                   .Returns(new[] { new PharmacyHome.Medicine(1,"","","") });
+                                   .Returns(new[] { new PharmacyHome.Medicine(1,"","","","",0,0) });
 
             medicineRepositoryStub.Setup(x => x.GetAllByTitle(It.IsAny<string>()))
-                                  .Returns(new[] { new PharmacyHome.Medicine(2, "", "", "") });
+                                  .Returns(new[] { new PharmacyHome.Medicine(2, "", "", "", "", 0,0) });
 
             var medicineService = new MedicineService(medicineRepositoryStub.Object);
             var validDate = "02.02.2021";
@@ -31,10 +31,10 @@ namespace Medicine.Tests
         {
             var medicineRepositoryStub = new Mock<IMedicineRepository>();
             medicineRepositoryStub.Setup(x => x.GetAllByExpirationDate(It.IsAny<string>()))
-                                   .Returns(new[] { new PharmacyHome.Medicine(1, "", "", "") });
+                                   .Returns(new[] { new PharmacyHome.Medicine(1, "", "", "","",0,0) });
 
             medicineRepositoryStub.Setup(x => x.GetAllByTitle(It.IsAny<string>()))
-                                  .Returns(new[] { new PharmacyHome.Medicine(2, "", "", "") });
+                                  .Returns(new[] { new PharmacyHome.Medicine(2, "", "", "","",0,0) });
 
             var medicineService = new MedicineService(medicineRepositoryStub.Object);
             var validTitle = "Омез";
