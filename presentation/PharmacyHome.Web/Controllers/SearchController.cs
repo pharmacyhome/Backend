@@ -19,7 +19,7 @@ namespace PharmacyHome.Web.Controllers
         {
             var medicine = medicineService.GetAllByQuery(query);
 
-            return View(medicine);
+            return View("Index", medicine);
         }
     }
 }
