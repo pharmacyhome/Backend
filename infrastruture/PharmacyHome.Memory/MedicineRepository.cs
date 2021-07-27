@@ -28,5 +28,10 @@ namespace PharmacyHome.Memory
             return medicines.Where(m => m.Title.Contains(titlePart))
                              .ToArray();
         }
+
+        public Medicine GetById(int id)
+        {
+            return medicines.Single(m => m.Id == id);
+        }
     }
 }
