@@ -10,11 +10,11 @@ namespace PharmacyHome.Web.Controllers
         {
             this.medicineRepository = medicineRepository;
         }
-        public IActionResult Index()
+        public IActionResult Index(int id)
         {
             Medicine medicine = medicineRepository.GetById(id);
 
-            return View();
+            return View(medicine);
         }
     }
 }
