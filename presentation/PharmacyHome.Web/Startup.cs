@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using PharmacyHome.Memory;
+using System;
 
 namespace PharmacyHome.Web
 {
@@ -20,6 +21,15 @@ namespace PharmacyHome.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddDistributedMemoryCache();
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(20);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            }
+                );
+
             services.AddSingleton<IMedicineRepository, MedicineRepository>();
             services.AddSingleton<MedicineService>();
         }
@@ -43,6 +53,8 @@ namespace PharmacyHome.Web
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseSession();
 
             app.UseEndpoints(endpoints =>
             {
