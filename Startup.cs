@@ -1,5 +1,10 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
+using Microsoft.EntityFrameworkCore;
+
+using PharmacyHome.Database;
+using PharmacyHome.Services;
+
 
 namespace PharmacyHome
 {
@@ -21,6 +26,9 @@ namespace PharmacyHome
                 JsonConvert.DefaultSettings = () => options.SerializerSettings;
             });
             services.AddMvc().AddControllersAsServices();
+
+            services.AddSingleton<IDbContextFactory<DatabaseContext>, DatabaseContextFactory>();
+            services.AddSingleton<IDatabase, DatabaseService>();
 
             bool useSSL = configuration.GetValue<bool>("UseSSL");
             if (useSSL)
