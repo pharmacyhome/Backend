@@ -1,4 +1,4 @@
-﻿namespace PharmacyHome.Types.Entities
+﻿namespace PharmacyHome.Types
 {
     public class Medicine : IEntity
     {

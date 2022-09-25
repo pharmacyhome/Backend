@@ -3,7 +3,7 @@ using PharmacyHome.Database;
 
 namespace PharmacyHome.Services
 {
-    public class DatabaseService : IDatabase
+    public partial class DatabaseService : IDatabase
     {
         private readonly IConfiguration _configuration;
         private readonly IDbContextFactory<DatabaseContext> _dbContext;
