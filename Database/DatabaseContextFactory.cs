@@ -13,7 +13,7 @@ namespace PharmacyHome.Database
         {
             return new DatabaseContext(BuildOptions(connectionString));
         }
-        public DbContextOptions<DatabaseContext> BuildOptions(string connection)
+        private DbContextOptions<DatabaseContext> BuildOptions(string connection)
         {
             var builder = new DbContextOptionsBuilder<DatabaseContext>();
             builder.UseNpgsql(connection);

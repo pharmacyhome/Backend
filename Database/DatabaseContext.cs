@@ -20,6 +20,8 @@ namespace PharmacyHome.Database
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            builder.HasDefaultSchema("public");
+
             builder.Entity<UserDB>()
                 .HasKey(u => u.Id);
             builder.Entity<UserDB>()
